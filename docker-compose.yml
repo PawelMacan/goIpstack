@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  # The Go App
+  go-app:
+    build: .
+    container_name: app
+    depends_on:
+      - 'mongo'
+    environment:
+      - PORT=8000
+    ports:
+      - '8000:8000'
+    volumes:
+      - './'
+  # MongoDB
+  mongo:
+    image: 'mongo:4.2.6-bionic'
+    container_name: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./mongodata:/db
+    restart: always
