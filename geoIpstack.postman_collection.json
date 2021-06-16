@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "56bab8b0-0f38-4b4c-8b9f-00331f218831",
+		"name": "geoIpstack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createGeoIpLocation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/geoip/www.google.pl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"geoip",
+						"www.google.pl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getGeoIpLocation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/geoip/60c904873bfaac967efe764c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"geoip",
+						"60c904873bfaac967efe764c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteGeoIpLocation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/geoip/60c904873bfaac967efe764c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"geoip",
+						"60c904873bfaac967efe764c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
